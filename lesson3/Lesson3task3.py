@@ -10,7 +10,7 @@ def main():
     docs = db.docs
 
     count = 0
-    # поиск вакансий с хх в монго, елси не найдено то вставка
+
     for i in range(len(df)):
         unique = df.iloc[i]['Ссылка на вакансию']
         if docs.find_one({'Ссылка на вакансию': unique}) is None:
