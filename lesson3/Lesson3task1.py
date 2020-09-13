@@ -7,7 +7,7 @@ def main():
     df = l2t1.main()
     print(df)
 
-    client = MongoClient('mongodb://127.0.0.1:27017')
+    client = MongoClient('mongodb://90.154.71.215:32')
     db = client['vacancy']
     docs = db.docs
 

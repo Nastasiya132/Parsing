@@ -3,7 +3,7 @@ from pprint import pprint
 
 
 def main():
-    client = MongoClient('mongodb://127.0.0.1:27017')
+    client = MongoClient('mongodb://90.154.71.215:32')
     db = client['vacancy']
     docs = db.docs
 

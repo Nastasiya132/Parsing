@@ -5,12 +5,10 @@ import lesson2 as l2t1
 def main():
     df = l2t1.main()
 
-    # инициация и подключение к монго
-    client = MongoClient('mongodb://127.0.0.1:27017')
+    client = MongoClient('mongodb://90.154.71.215:32')
     db = client['vacancy']
     docs = db.docs
 
-    # количество новый вакансий
     count = 0
     # поиск вакансий с хх в монго, елси не найдено то вставка
     for i in range(len(df)):
